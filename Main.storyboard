@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colors_of_the_Year" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pantone Colors of the Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVK-kd-CBe">
+                                <rect key="frame" x="59.5" y="80" width="295.5" height="31.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="vKE-6N-wKA">
+                                <rect key="frame" x="54" y="145.5" width="306" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXs-jq-aJs">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                        <state key="normal" title="2017"/>
+                                        <connections>
+                                            <action selector="buttonYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDy-5L-6iA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLg-xV-S2s">
+                                        <rect key="frame" x="135" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="2018"/>
+                                        <connections>
+                                            <action selector="buttonYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHa-fx-Vdh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRY-fd-0eS">
+                                        <rect key="frame" x="271" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="2019"/>
+                                        <connections>
+                                            <action selector="buttonYear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRc-dz-JwW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34x-97-gBb">
+                                <rect key="frame" x="43" y="182" width="328" height="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen" highlightedImage="homescreen" translatesAutoresizingMaskIntoConstraints="NO" id="Zlo-MB-wqy">
+                                <rect key="frame" x="20" y="205" width="374" height="507"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="Zlo-MB-wqy" secondAttribute="height" multiplier="12:11" constant="-179.09090909090901" id="HWq-XE-qTh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zlo-MB-wqy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1hL-zM-q6g"/>
+                            <constraint firstItem="34x-97-gBb" firstAttribute="leading" secondItem="vKE-6N-wKA" secondAttribute="leading" constant="-11" id="Ell-BT-ve2"/>
+                            <constraint firstItem="sVK-kd-CBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="KTN-gi-bk8"/>
+                            <constraint firstItem="Zlo-MB-wqy" firstAttribute="top" secondItem="vKE-6N-wKA" secondAttribute="bottom" constant="29.5" id="cd0-k5-CG8"/>
+                            <constraint firstItem="vKE-6N-wKA" firstAttribute="top" secondItem="sVK-kd-CBe" secondAttribute="bottom" constant="34" id="csQ-ms-gba"/>
+                            <constraint firstItem="sVK-kd-CBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edL-Wj-q5x"/>
+                            <constraint firstItem="34x-97-gBb" firstAttribute="top" secondItem="sVK-kd-CBe" secondAttribute="bottom" constant="70.5" id="ptQ-ac-nM5"/>
+                            <constraint firstItem="vKE-6N-wKA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q3t-Q2-aBR"/>
+                            <constraint firstItem="Zlo-MB-wqy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSY-Ui-sMX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34x-97-gBb" secondAttribute="trailing" constant="43" id="ukE-xa-zgq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorImage" destination="Zlo-MB-wqy" id="V6k-Rb-5FV"/>
+                        <outlet property="colorText" destination="34x-97-gBb" id="UZD-Rm-Khd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homescreen" width="496" height="598"/>
+    </resources>
+</document>
