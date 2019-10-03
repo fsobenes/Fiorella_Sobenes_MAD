@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Your BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LP6-nS-684">
+                                <rect key="frame" x="85.333333333333329" y="92" width="243.33333333333337" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" red="0.81908312182741116" green="0.37821000816081085" blue="0.49228901453077101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="jka-NI-Qok">
+                                <rect key="frame" x="83" y="179" width="248" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-HG-zpd">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight (kg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phb-wB-f35">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="29"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bU4-7Y-WVp">
+                                                <rect key="frame" x="102" y="0.0" width="94" height="29"/>
+                                                <color key="tintColor" red="0.81908312182741116" green="0.39675367437617554" blue="0.51828196494175771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bDj-zp-CH3"/>
+                                                </connections>
+                                            </stepper>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="60" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88e-Mz-6yb">
+                                                <rect key="frame" x="209" y="0.0" width="39" height="29"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-sw-jal">
+                                        <rect key="frame" x="0.0" y="60" width="248" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height (m)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w61-eo-bpK">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1.65" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gnb-XX-UZ4">
+                                                <rect key="frame" x="191" y="0.0" width="57" height="30"/>
+                                                <color key="tintColor" red="0.81908312179999998" green="0.3782100082" blue="0.49228901450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEe-uh-Mbp">
+                                <rect key="frame" x="200.66666666666666" y="277" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58h-c6-pNg">
+                                <rect key="frame" x="168" y="307" width="64" height="30"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" red="0.81908312179999998" green="0.3782100082" blue="0.49228901450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqn-Bh-h5w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EEe-uh-Mbp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6.5" id="1H6-F5-feW"/>
+                            <constraint firstItem="LP6-nS-684" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="HKc-eN-iE6"/>
+                            <constraint firstItem="jka-NI-Qok" firstAttribute="top" secondItem="LP6-nS-684" secondAttribute="bottom" constant="51" id="Ijh-7p-0BD"/>
+                            <constraint firstItem="58h-c6-pNg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-7" id="PcF-Ex-SyN"/>
+                            <constraint firstItem="LP6-nS-684" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SPN-0h-r4x"/>
+                            <constraint firstItem="jka-NI-Qok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TVa-hW-Qsy"/>
+                            <constraint firstItem="58h-c6-pNg" firstAttribute="top" secondItem="jka-NI-Qok" secondAttribute="bottom" constant="38" id="cJm-Y4-eWe"/>
+                            <constraint firstItem="EEe-uh-Mbp" firstAttribute="top" secondItem="LP6-nS-684" secondAttribute="bottom" constant="149" id="zeF-hU-FYe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bmiResult" destination="EEe-uh-Mbp" id="Afp-3v-sT7"/>
+                        <outlet property="height" destination="gnb-XX-UZ4" id="puQ-bk-jzH"/>
+                        <outlet property="kilos" destination="88e-Mz-6yb" id="YJH-TK-KSA"/>
+                        <outlet property="stepperOutlet" destination="bU4-7Y-WVp" id="UzG-Ia-exU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+</document>
