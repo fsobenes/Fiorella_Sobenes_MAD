@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Commuting_Time" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MN3-42-uBO">
+                                <rect key="frame" x="143.5" y="71" width="127.5" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="gFj-hD-Gsf">
+                                <rect key="frame" x="23" y="126" width="328" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round-trip Commute Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foY-4d-X56">
+                                        <rect key="frame" x="0.0" y="0.0" width="206" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20 miles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uh-OR-dm7">
+                                        <rect key="frame" x="252" y="0.0" width="76" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="rUY-ZM-N1s">
+                                <rect key="frame" x="23" y="168" width="299" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Monthly Commute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-EV-dVb">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iiq-x5-pe5">
+                                        <rect key="frame" x="250" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="kG1-pD-fKA">
+                                <rect key="frame" x="23" y="217" width="368" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Gas in Tank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Old-Zu-lZX">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 gallons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBD-SV-rz5">
+                                        <rect key="frame" x="116" y="0.0" width="66" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="18" translatesAutoresizingMaskIntoConstraints="NO" id="CXc-ZP-hMG">
+                                        <rect key="frame" x="208" y="0.0" width="162" height="31"/>
+                                        <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="158" id="lHH-FD-kNO"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="gasFunc:" destination="BYZ-38-t0r" eventType="valueChanged" id="nMA-oj-3rr"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rBD-SV-rz5" firstAttribute="leading" secondItem="Old-Zu-lZX" secondAttribute="trailing" constant="28" id="69j-Jd-xON"/>
+                                    <constraint firstItem="CXc-ZP-hMG" firstAttribute="leading" secondItem="rBD-SV-rz5" secondAttribute="trailing" constant="28" id="Ik3-pU-su6"/>
+                                    <constraint firstItem="CXc-ZP-hMG" firstAttribute="leading" secondItem="rBD-SV-rz5" secondAttribute="trailing" constant="28" id="ppa-ZT-Hzb"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qdg-re-uba">
+                                <rect key="frame" x="103" y="295" width="208" height="29"/>
+                                <segments>
+                                    <segment title="Car"/>
+                                    <segment title="Bike"/>
+                                    <segment title="Bus"/>
+                                </segments>
+                                <color key="tintColor" red="0.068911641651925273" green="0.75501665609137059" blue="0.11013530419239002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-Wd-BUT">
+                                <rect key="frame" x="169" y="352" width="67" height="30"/>
+                                <state key="normal" title="Commute">
+                                    <color key="titleColor" red="0.068911641649999994" green="0.75501665610000002" blue="0.11013530420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="commuteFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6y-8a-w1U"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Commute Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-mE-mkN">
+                                <rect key="frame" x="46" y="438" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-Pg-LCu">
+                                <rect key="frame" x="237" y="437" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gas Needed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR5-Jo-UXM">
+                                <rect key="frame" x="46" y="467" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="sMt-DT-Owv">
+                                <rect key="frame" x="82" y="511" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qr-rU-CxY">
+                                <rect key="frame" x="237" y="467" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rUY-ZM-N1s" firstAttribute="top" secondItem="gFj-hD-Gsf" secondAttribute="bottom" constant="12" id="0eL-3D-O0f"/>
+                            <constraint firstItem="qdg-re-uba" firstAttribute="top" secondItem="kG1-pD-fKA" secondAttribute="bottom" constant="48" id="1IX-p9-Xox"/>
+                            <constraint firstItem="qdg-re-uba" firstAttribute="centerX" secondItem="kG1-pD-fKA" secondAttribute="centerX" id="7I0-Ed-rQX"/>
+                            <constraint firstItem="kG1-pD-fKA" firstAttribute="centerX" secondItem="MN3-42-uBO" secondAttribute="centerX" id="9uk-3p-gtJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsZ-Wd-BUT" secondAttribute="trailing" constant="178" id="BfY-4C-ZeK"/>
+                            <constraint firstItem="kG1-pD-fKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="PcN-9U-xiZ"/>
+                            <constraint firstItem="kG1-pD-fKA" firstAttribute="top" secondItem="rUY-ZM-N1s" secondAttribute="bottom" constant="18" id="a3O-Aq-TNQ"/>
+                            <constraint firstItem="MN3-42-uBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dwO-6C-Do2"/>
+                            <constraint firstItem="dsZ-Wd-BUT" firstAttribute="top" secondItem="qdg-re-uba" secondAttribute="bottom" constant="29" id="imV-LP-JG3"/>
+                            <constraint firstItem="kG1-pD-fKA" firstAttribute="leading" secondItem="rUY-ZM-N1s" secondAttribute="leading" id="oE9-OI-na7"/>
+                            <constraint firstItem="gFj-hD-Gsf" firstAttribute="top" secondItem="MN3-42-uBO" secondAttribute="bottom" constant="19" id="qrP-UT-n6M"/>
+                            <constraint firstItem="MN3-42-uBO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="tC5-Zi-UMe"/>
+                            <constraint firstItem="kG1-pD-fKA" firstAttribute="leading" secondItem="gFj-hD-Gsf" secondAttribute="leading" id="ylN-A9-S8J"/>
+                            <constraint firstItem="qdg-re-uba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="zD6-gC-OKx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="commuteButton" destination="dsZ-Wd-BUT" id="637-j1-QI1"/>
+                        <outlet property="commuteSwitch" destination="Iiq-x5-pe5" id="mef-Rq-Yxp"/>
+                        <outlet property="gasLabel" destination="rBD-SV-rz5" id="Vgg-1v-UOb"/>
+                        <outlet property="gasSlider" destination="CXc-ZP-hMG" id="OTh-8X-6mk"/>
+                        <outlet property="itemImage" destination="sMt-DT-Owv" id="dlJ-OM-vqB"/>
+                        <outlet property="milesText" destination="9Uh-OR-dm7" id="5v9-iD-wqb"/>
+                        <outlet property="totalGas" destination="8qr-rU-CxY" id="X73-8R-AWa"/>
+                        <outlet property="totalTime" destination="xRZ-Pg-LCu" id="2NC-2h-mJu"/>
+                        <outlet property="transportation" destination="qdg-re-uba" id="69P-RJ-RYk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car" width="225" height="225"/>
+    </resources>
+</document>
