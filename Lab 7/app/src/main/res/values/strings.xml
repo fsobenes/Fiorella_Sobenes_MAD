@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="money1">$</string>
+    <string name="money2">$$</string>
+    <string name="money3">$$$</string>
+    <string-array name="exercise">
+        <item>Uhhhhh</item>
+        <item>Science</item>
+        <item>Music</item>
+        <item>Money</item>
+        <item>Jellyfish</item>
+    </string-array>
+    <string name="radio1">Red</string>
+    <string name="radio2">Yellow</string>
+    <string name="radio3">Pink</string>
+    <string name="radio4">White</string>
+    <string name="money">How much money do you want?</string>
+    <string name="colors">What is your favorite color?</string>
+    <string name="toggleUnder">Underwater</string>
+    <string name="toggleLand">Land</string>
+    <string name="title">What Bikini Bottoms Character Are You?</string>
+    <string name="button">Check</string>
+</resources>
