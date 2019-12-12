@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity{
     Integer num = 0;
 
     //https://stackoverflow.com/questions/45144071/android-how-to-generate-random-numbers-and-set-those-numbers-on-textviews
-    Random randomNum = new Random();
-    Integer n = randomNum.nextInt(49)+1;
+//    Random randomNum = new Random();
+//    Integer n = randomNum.nextInt(49)+1;
 
 
 
@@ -57,16 +57,16 @@ public class MainActivity extends AppCompatActivity{
         Log.d("DEBUG", myString);
         if (!myString.isEmpty()){
             int number = Integer.parseInt(myString);
-            if (number == n){
+            if (number == num){
                 hintText.setText("Correct!");
                 finalText.setText("The number was...");
-                correctNum.setText(n.toString());
+                correctNum.setText(num.toString());
             }
-            else if (number < n){
+            else if (number < num){
                 hintText.setText("Higher!");
                 finalText.setText("Guess Again");
             }
-            else if (number > n){
+            else if (number > num){
                 hintText.setText("Lower!");
                 finalText.setText("Guess Again!");
             }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity{
 
     public void restartButton(){
         Random randomNum = new Random();
-        Integer n = randomNum.nextInt(49)+1;
+        num = randomNum.nextInt(49)+1;
         correctNum.setText("");
         hintText.setText("");
         finalText.setText("");
