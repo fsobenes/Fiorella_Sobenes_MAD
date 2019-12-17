@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Practicum 2</string>
+    <string name="title">Burrito Builder</string>
+    <string name="burrito">burrito</string>
+    <string name="taco">taco</string>
+    <string-array name="spinner">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="salsa">salsa</string>
+    <string name="cheese">cheese</string>
+    <string name="sourcream">sour cream</string>
+    <string name="guac">guacamole</string>
+    <string name="buildButton">Build</string>
+    <string name="toggleV">Vegan</string>
+    <string name="toggleM">Meat</string>
+    <string name="gf">Gluten-Free</string>
+    <string name="name">Name</string>
+    <string name="find">Find Location</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
